@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Affinipay for Associations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
 
 </head>
 
 <header>
-    <nav class="navbar fixed-top navbar-expand-lg bg-white">
+
+    <!-- Top Navigation -->
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-white nav-main">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="../img/affinipay-for-associations-logo-color.svg" alt="main-logo" height="100px" width="250px" />
@@ -21,47 +27,49 @@
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="material-icons hamburger" style="font-size:30px;">
+                    menu
+                </i>
             </button>
 
             <div class="collapse navbar-collapse flex-column align-items-end" id="navbarCollapse">
-                <!-- navbar1 -->
+
                 <div class="navbar-nav mb-lg-0">
-                    <a class="nav-item nav-link">855 656 4684</a>
-                    <a class="nav-item nav-link" href="#">Contact Us</a>
+                    <a class="nav-item nav-link" style="color:#007bff">800-485-6455 &nbsp;&nbsp;&nbsp; | </a>
+                    <a class="nav-item nav-link" href="https://associations.affinipay.com/support/contact-us/">Contact
+                        Us</a>
                 </div>
 
-                <!-- navbar2 -->
+
                 <ul class="navbar-nav mt-0">
 
                     <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">FEATURES</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="https://associations.affinipay.com/features/all-features/">ALL
+                                FEATURES</a>
+                            <a class="dropdown-item" href="https://associations.affinipay.com/features/payments/">PAYMENTS</a>
+                            <a class="dropdown-item" href="https://associations.affinipay.com/features/reporting/">REPORTING</a>
+                            <a class="dropdown-item" href="https://associations.affinipay.com/features/security/">SECURITY</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PARTNERS</a>
+                        <a class="nav-link" href="https://associations.affinipay.com/partners/">PARTNERS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">OUR STORY</a>
+                        <a class="nav-link" href="https://associations.affinipay.com/about/our-story/">OUR STORY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SUPPORT</a>
+                        <a class="nav-link" href="https://support.affinipay.com/">SUPPORT</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline-primary" role="button" href="#">SCHEDULE A DEMO</a>
+                        <a class="nav-link btn btn-outline-primary" role="button" href="https://associations.affinipay.com/features/schedule-a-demo/">SCHEDULE
+                            A DEMO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-primary" href="https://secure.affinipay.com/login" role="button">LOGIN</a>
-
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -70,199 +78,301 @@
 
 <body>
 
-    <nav aria-label="breadcrumb"></nav>
 
-    <ol class="breadcrumb pl-5" style="background-color: lightgrey;">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Features</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Payments</li>
-    </ol>
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="background-color: lightgrey;">
+            <li class="breadcrumb-item"><a target="_blank" href="https://associations.affinipay.com/">Home</a></li>
+            <li class="breadcrumb-item"><a target="_blank" href="https://associations.affinipay.com/features/all-features/">Features</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Payments</li>
+        </ol>
     </nav>
 
+
+    <!-- Main Jumbotron -->
     <div class="jumbotron jumbotron-fluid" style="background-color: #2056ba;">
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <img src="../img/pay-icon.png" alt="pay-icon image" />
-
+                <div class="col-md-4 col-xs-12">
+                    <img class="float-right" id="jumbotron-pic" src="../img/pay-icon.png" alt="pay-icon image" />
                 </div>
-
-                <div class="col-8">
-                 <h2 class="text-white">Payments</h2>
-                 <p class="text-white">Easily accept credit, debit, and ACH payments with our secure
-                     online technology developed specifically for associations and their members.
-                 </p>
-
+                <div class="col-md-8 col-xs-12">
+                    <h2 class="text-white">Payments</h2>
+                    <p class="text-white">Easily accept credit, debit, and ACH payments with our secure
+                        online technology developed specifically for associations and their members.
+                    </p>
                 </div>
             </div>
-
         </div>
     </div>
-    <div class="jumbotron jumbotron-fluid" style="background-color: white;">
+
+
+
+    <!-- Feature Spotlight -->
+    <div class="jumbotron jumbotron-fluid jumbo-feature" style="background-color: white">
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <img src="../img/apfa-featurespayments.png" alt="feature payment image" />
-
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <img class="feature-img img-fluid" src="../img/apfa-featurespayments.png" alt="feature payment image" />
                 </div>
-
-                <div class="col-8">
-
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-6">
+                            <img class="feature-icon img-fluid" src="../img/compliance-check.jpg" alt="checkmark icon" />
+                        </div>
+                        <div class="col-md-9 col-sm-6 col-xs-6">
+                            <div class="feature-headings">
+                                <h6 id="sml-feature-heading"">FEATURE SPOTLIGHT</h6>
+                                <h1 id="main-feature-heading">Custom Payment Pages</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12">
+                        <p class="feature-text">Get your own secure payment pages to easily process online
+                            payments.
+                            Customize your payment page and link to it from emails, event registrations, and your
+                            website
+                            to give members a seamless payment experience.
+                        </p>
+                        <a class="feature-link" target="_blank" href="https://associations.affinipay.com/features/custom-payment-pages/">More
+                            about payment pages</a>
+                       </div>
+                    </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
-    <main class="container">
-        <div class="row">
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
 
 
+
+    <!-- Product Details Cards -->
+    <div class="container cards-container mb-5">
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-4 col-sm-12 col-xs-12">
+                <div class="card" style="width: 20rem;">
+                    <img src="../img/charge-01.svg" class="card-img-top img-fluid center-block bg-light" alt="credit charge picture">
+                    <div class="card-body">
+                        <h5 class="card-title">Charge</h5>
+                        <p class="card-text">Give members multiple easy ways to pay for event registration,
+                            membership
+                            dues, donations, and more!
+                            Let members pay online at their convenience,
+                            or accept payments onsite with the AffiniPay mobile app and swiper. Whichever option
+                            you
+                            choose, getting paid is simple and secure.</p>
+                        <a class="explore-link" target="_blank" href="https://associations.affinipay.com/features/charge">Explore
+                            the feature</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-xs-12">
+                <div class="card" style="width: 20rem;">
+                    <img src="../img/quick-bill-01.svg" class="card-img-top img-fluid center-block bg-light" alt="quick bill picture">
+                    <div class="card-body">
+                        <h5 class="card-title">Quick Bill</h5>
+                        <p class="card-text">Help members pay quickly and easily, with just a click. Quick Bill
+                            lets
+                            you send a link to a customized payment portal,
+                            where members can view and pay multiple Quick Bills at once.
+                            View, manage, and track all of your Quick Bills right from your AffiniPay account. </p>
+                        <a class="explore-link" target="_blank" href="https://associations.affinipay.com/features/quick-bill">Explore
+                            the feature</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-xs-12">
+                <div class="card" style="width: 20rem;">
+                    <img src="../img/schedules-payments-01-01.svg" class="card-img-top img-fluid center-block bg-light"
+                        alt="scheduled payments photo">
+                    <div class="card-body">
+                        <h5 class="card-title">Scheduled Payments</h5>
+                        <p class="card-text">Schedule payments in advance for sponsorships, member dues, donations,
+                            and
+                            more.
+                            With our free Scheduled Payments feature, collecting recurring payments is simple and
+                            convenient for both you and your members.</p>
+                        <a class="explore-link" target="_blank" href="https://associations.affinipay.com/features/scheduled-payments">Explore
+                            the feature</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+        <div class="row d-flex justify-content-between mt-4">
+            <div class="col-lg-4 col-sm-12 col-xs-12">
+                <div class=" card" style="width: 20rem;">
+                    <img src="../img/payment-integration-01.svg" class="card-img-top img-fluid center-block bg-light"
+                        alt="payment integration photo">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Website Payment Integrations</h5>
+                        <p class="card-text">We provide a secure link so you can easily add payments to your
+                            website
+                            and let your members pay at their convenience.
+                            No development or technical skills are needed to create a simple, professional payment
+                            experience. </p>
+                        <a class="explore-link" target="_blank" href="https://associations.affinipay.com/features/website-payments-integration">Explore
+                            the feature</a>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+            <div class="col-lg-4 col-sm-12 col-xs-12">
+                <div class="card" style="width: 20rem;">
+                    <img src="../img/client-signatures-01.svg" class="card-img-top img-fluid center-block bg-light" alt="pen signing photo">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Client Signatures</h5>
+                        <p class="card-text">Protect your association against potential payment disputes by adding
+                            signatures to credit card receipts.
+                            No matter how transactions are run, you can easily collect a member’s signature to
+                            verify
+                            payment. </p>
+                        <a class="explore-link" target="_blank" href="https://associations.affinipay.com/features/digital-signatures">Explore
+                            the feature</a>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+            <div class="col-lg-4 col-sm-12 col-xs-12">
+                <div class="card" style="width: 20rem;">
+                    <img src="../img/refunds-01.svg" class="card-img-top img-fluid center-block bg-light" alt="refund money photo">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Refunds</h5>
+                        <p class="card-text">AffiniPay provides two easy ways for you to return a payment to a
+                            member.
+                            For same day returns,
+                            void a payment entirely. If more than a day has passed, the refund function lets you
+                            reverse payment with just a click. </p>
+                        <a class="explore-link" target="_blank" href="https://associations.affinipay.com/features/refunds">Explore
+                            the feature</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Testimonials -->
+    <section class="testimonials mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="card testimonial-border">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-9 sm-12">
+                                <h5 class="card-title"><i class="fi-star"></i><i class="fi-star"></i><i class="fi-star"></i><i
+                                        class="fi-star"></i><i class="fi-star"></i>
+                                </h5>
+                                <p class="card-text">
+
+                                    <blockquote class="blockquote testimonial-text" style="font-size: 18px">
+                                        <i class="material-icons flipped">
+                                            format_quote
+                                        </i>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip
+                                        ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt
+                                        mollit anim id est laborum.
+                                        <i class="material-icons">format_quote</i>
+                                        <footer class="blockquote-footer text-right">Jane Doe, Job Title at Association
+                                            Name
+                                        </footer>
+
+                                    </blockquote>
+
+                                </p>
+                            </div>
+                            <div class="col-md-3 sm-12">
+                                <img class="img-fluid partners-img" src="../img/smiling-woman.jpg" alt="smiling woman photo" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
+    </section>
 
-        <div class="row">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+
+    <!-- Summary -->
+    <section class="summary-section mt-4 mb-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <h2 class="summary-header">Use our payment solution with tools you already use</h2>
+                    <p>It's easy to use our online payment solution with the association software applications you
+                        already
+                        use and trust.</p>
+                    <a class="summary-link" href="">Explore integrations</a>
+
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <img class="img-fluid partners-img" src="../img/partners-img.png" alt="business partners image" />
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <div class="row">
+        <footer style="background-color: #2056ba; width: 100%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <ul class="nav social-nav">
+                            <li class="nav-item">
+                                <a target="_blank" href="https://www.facebook.com/AffiniPay/"><i class="social-icons fi-social-facebook"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a target="_blank" href="https://twitter.com/affinipay"><i class="social-icons fi-social-twitter"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a target="_blank" href="https://www.linkedin.com/company/affinipay/"><i class="social-icons fi-social-linkedin"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a target="_blank" href="https://plus.google.com/+Affinipay/"><i class="social-icons fi-social-google-plus"></i></a>
+                            </li>
+                        </ul>
+                        <p class="footer-text1">AffiniPay is a resident agent of Wells Fargo Bank, N.A. and Citizens
+                            Bank, N.A.</p>
+                        <p class="footer-text2">Privacy Policy</p>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+
+                    <div class="col-md-6 col-xs-6">
+                        <ul class="nav awards-bar">
+                            <li class="nav-item">
+                                <img src="../img/seventimehonorrolllogo.svg" width="100" class="img-fluid" alt="inc honor roll" />
+                            </li>
+                            <li class="nav-item">
+                                <img src="../img/eoy2.png" class="img-fluid" alt="entrepreneur of year award" />
+                            </li>
+                            <li class="nav-item">
+                                <img src="../img/fast50-2018.png" class="img-fluid" alt="fast 50 award" />
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
+        </footer>
+    </div>
 
-        </div>
-        <div class="row">
-            <div class="col-6" style="background-color: coral; height:100px;">
-
-            </div>
-
-            <div class="col-6" style="background-color: darkgreen; height:100px;">
-
-            </div>
-
-        </div>
-        <div class="row">
-            <footer>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-            </footer>
-        </div>
-
-
-    </main>
-
+    <!-- JS at end for fast loading -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
+
 </body>
 
 </html>

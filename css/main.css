@@ -1,12 +1,250 @@
+/* Custom Font */
 
-body {
-    padding-top: 150px;
-  }
-
-ol.breadcrumb {
-    margin-bottom: 0rem;
+@font-face {
+font-family: Muli;
+src: url("../fonts/Muli/Muli-Regular.ttf");
 }
 
+/* Body */
+
+body {
+padding-top: 150px;
+font-family: Muli;
+}
+
+/* Navigation */
+
+.nav-link {
+font-weight: bold;
+margin: 5px;
+font-size: 14px;
+}
+
+.dropdown-item {
+font-weight: bold;
+color: #2056ba;
+font-size: 12px;
+}
+.nav-link.btn {
+padding: 10px;
+}
+
+.shadowNav {
+box-shadow: 0px 1px 10px #999;
+}
+
+/* Breadcrumb Nav */
+
+ol.breadcrumb {
+margin-bottom: 0rem;
+padding-left:200px;
+}
+
+/* General Jumbotron Sections */
+
 .jumbotron {
-    margin-bottom:0rem;
+margin-bottom:0rem;
+}
+
+/* Feature Jumbotron */
+
+.feature-headings {
+margin-left: 20px;
+font-weight: bold;
+margin-top: 20px;
+}
+
+#sml-feature-heading {
+font-weight: bold;
+font-size: 14px;
+color: #0bbf5e;
+}
+
+#main-feature-heading {
+color: #2056ba;
+font-size:32px;
+}
+
+.feature-text {
+padding-top: 20px;
+font-size:16px;
+}
+
+.feature-text, .feature-link {
+margin-left:100px;
+}
+
+.feature-link {
+font-weight:bold;
+}
+
+.feature-icon {
+margin-left:70px;
+     
+}
+
+/* Cards */
+
+.card {
+ height: 100%;
+ margin-left: auto;
+ margin-right: auto;
+} 
+.card p {
+font-size: 14px;
+
+}
+.card-title {
+font-weight: bold;
+color: darkblue;
+}
+.card img { 
+width: 100%;
+height: auto; 
+}
+.explore-link {
+font-weight: bold;
+color: #007bff;
+}
+
+/* Testimonials Section */
+
+.fi-star {
+color: #007bff;
+}
+
+.material-icons {
+color: darkblue;
+font-size: 50px;
+white-space: nowrap;
+}
+
+.flipped {
+transform: scaleX(-1);
+}
+
+.testimonial-border {
+ border-bottom: 10px #0bbf5e solid;
+}
+
+.testimonial-text {
+font-weight: bold;
+}
+
+
+/* Summary Section */
+
+.summary-header {
+color: #2056ba;
+font-weight: bold;
+margin-right: 50px;
+}
+
+.summary-link {
+text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+padding-bottom: 3rem;
+padding-top: 2rem;
+color: white;
+}
+
+footer p{
+font-size:10px;
+margin-top:10px;
+}
+
+.social-icons {
+color: white;
+font-size: 40px;
+margin: 10px;
+}
+
+
+/* Media Queries */
+
+/* SMARTPHONES PORTRAIT */
+@media screen and (max-width: 300px) {
+
+ol.breadcrumb {
+padding-left: 20px;
+padding-top: 20px;
+margin-top: 10px;
+}
+
+.feature-headings {
+margin-top: 30px;
+text-align: end;
+}
+
+
+.feature-icon {
+margin-top: 30px;
+}
+
+#main-feature-heading {
+text-align: left;
+}
+
+.footer-text1, .footer-text2 {
+text-align: center
+}
+
+.social-nav li{
+margin-left: auto;
+margin-right: auto;
+}
+.awards-bar{
+margin-top: 20px;
+}
+
+.awards-bar img {
+width:100px;
+height:47px;
+}
+
+.partners-img {
+margin-top: 20px;
+}
+.awards-bar li {
+margin-left: auto;
+margin-right: auto;
+
+}
+}
+
+/* TABLETS PORTRAIT */
+@media screen and (max-width: 768px) {
+
+ol.breadcrumb {
+padding-left:100px;
+}
+.card {
+margin-left:auto;
+margin-right:auto;
+
+}
+
+.feature-img {
+margin-top: 40px;
+}
+
+.awards-bar li {
+margin-left: auto;
+margin-right: auto;
+}
+
+.social-nav li{
+margin-left: auto;
+margin-right: auto;
+}
+
+.footer-text1, .footer-text2 {
+text-align: center
+}
+
+
 }
